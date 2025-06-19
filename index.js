@@ -10,6 +10,7 @@ const PORT = 3001;
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 const sentOrders = new Set();
 
