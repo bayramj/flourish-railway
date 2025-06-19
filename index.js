@@ -56,7 +56,6 @@ app.get('/', (req, res) => {
   res.send('✅ Webhook app is running');
 });
 
-
 app.post('/webhook', (req, res) => {
   const body = req.body;
   console.log('Webhook received:', body);
